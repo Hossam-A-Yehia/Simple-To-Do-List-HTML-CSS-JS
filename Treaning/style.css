@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.list {
+    width: 600px;
+    margin: 40px auto;
+}
+
+.list form {
+    padding: 15px;
+    background-color: #009688;
+    position: relative;
+}
+
+.list form input[type="text"] {
+    width: calc(100% - 15px);
+    height: 43px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+.list form input[type="text"]:focus {
+    outline: none;
+}
+
+.list form span {
+    background-color: #fff;
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    right: 12px;
+    top: 15px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #009688;
+    font-weight: normal;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.list form span:hover {
+    transform: rotate(360deg);
+}
+
+.list .container {
+    padding: 5px 15px;
+    background-color: #f6f6f6;
+    position: relative;
+}
+
+.list .container .task,
+.list .container .task-box {
+    padding: 10px;
+    color: #009688;
+    background-color: #fff;
+    font-weight: 700;
+    margin: 10px 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list .container .finish {
+    text-decoration: line-through;
+}
+.list .container .delete {
+    background-color: #e91e63;
+    padding: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius:4px;
+}
+.list .info{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.list .info .count,
+.list .info .complate {
+    font-size: 12px;
+}
+.list .info .count span,
+.list .info .complate span {
+    background-color: #009688;
+    border-radius: 6px;
+    padding: 2px 5px;
+    color: #fff;
+}
+.list .info .count span {
+    background-color: #e91e63;
+}
+.list .info .complate span {
+    background-color: #009688;
+    border-radius: 4px;
+}
